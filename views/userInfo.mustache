@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>user</title>
+    <link rel="stylesheet" href="/main.css">
+  </head>
+  <body id="user_body">
+    {{#user}}
+      <div id=image_info>
+        <div class='image'>
+          <img src="{{avatar}}" height:150 width:150 id="avatar_user">
+        </div>
+        <div class='info'>
+          <h1 id="user_name">{{name}}</h1>
+          <div>
+            <div>
+              {{#address.city}}{{address.city}}, {{/address.city}}{{address.country}} | {{#job}}{{job}}, {{company}}{{/job}}{{^job}}<span id="hire">Available for hire</span>{{/job}}
+            </div>
+            <div id="email_phone">
+              {{email}} | {{phone}}
+            </div>
+          </div>
+        </div>
+      </div>
+      {{#university}}
+        <div id="education" class="edu_skill">
+          <strong>Education</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{university}}
+        </div>
+      {{/university}}
+
+        <div id="skills" class="edu_skill">
+          <span id="Skill_title"><strong>Skills</strong></span>
+          <div class="skills_list">
+            <div>{{skills.0}}</div>
+            <div>{{skills.1}}</div>
+            <div>{{skills.2}}</div>
+          </div>
+        </div>
+        {{/user}}
+
+
+  </body>
+</html>

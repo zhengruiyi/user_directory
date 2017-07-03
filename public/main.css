@@ -1,0 +1,71 @@
+h3{
+  color: blue;
+}
+#available{
+  color:red;
+}
+h4{
+  color: black;
+}
+#hire{
+  color: red;
+}
+.users{
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.user{
+  text-decoration: none;
+  text-align: center;
+  width:250px;
+  height:250px;
+  border:  1px solid black;
+  margin: 10px 10px;
+  padding-bottom: 10px;
+}
+
+#avatar_user{
+  border: 1px solid grey;
+  border-radius: 50%;
+}
+body{
+  font-family: "Josefin Sans", "Noto Serif", "Dancing Script", sans-serif;
+}
+#image_info{
+  display: flex;
+  margin-bottom: 20px;
+}
+#email_phone{
+  padding-top: 5px;
+}
+.info{
+  margin-left: 20px;
+}
+
+#user_name{
+  font-size: 3em;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+#education{
+  margin-bottom: 10px;
+}
+.edu_skill{
+  padding-left: 70px;
+}
+
+#skills{
+  width:340px;
+  padding-left: 107px;
+
+}
+#Skill_title{
+  width: 150px;
+  position: absolute;
+}
+.skills_list{
+  width:300px;
+  padding-left: 62px;
+
+}
